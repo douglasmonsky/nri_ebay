@@ -116,7 +116,8 @@ class Window(Frame):
         self.T['state'] = NORMAL
         self.T.delete("1.0", END)
         for row in self.row_array:
-            self.T.insert(END, row + '    price:' + str(self.row_array[row]['price_param']) + '    stock:' + str(self.row_array[row]['stock_param']) + '\n')
+            self.T.insert(END, row + '    price:' + str(self.row_array[row]['price_param']) + 
+                          '    stock:' + str(self.row_array[row]['stock_param']) + '\n')
         self.T['state'] = DISABLED
         
         
@@ -128,7 +129,8 @@ class Window(Frame):
         self.T['state'] = NORMAL
         self.T.delete("1.0", END)
         for row in self.row_array:
-            self.T.insert(END, row + '    price:' + str(self.row_array[row]['price_param']) + '    stock:' + str(self.row_array[row]['stock_param']) + '\n')
+            self.T.insert(END, row + '    price:' + str(self.row_array[row]['price_param']) +
+                          '    stock:' + str(self.row_array[row]['stock_param']) + '\n')
         self.T['state'] = DISABLED
 
     
