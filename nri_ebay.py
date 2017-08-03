@@ -80,10 +80,9 @@ def ebay_search(keywords, filters, workbook, tkname):
                 rows = []
                 for value in id_dict[url].values():
                     rows.append(value)
-                #rows.append(int(stock)
                 workbook.xlsx_write(rows, r)
             tkname.after(random.randint(5000,10000),passit())
-            #time.sleep(random.uniform(5.0,10.0))
+
     
     print('DONE')
 def passit():
